@@ -13,7 +13,7 @@ int main()
 
     int size = 0;
     int idx = 0;
-    while (idx != '\0')
+    while (str[idx] != '\0')
     {
         size++;
         idx++;
