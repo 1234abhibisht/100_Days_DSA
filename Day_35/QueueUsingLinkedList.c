@@ -31,6 +31,21 @@ void enqueue(int value) {
 
     printf("%d inserted\n", value);
 }
+// Display queue
+void display() {
+    if (front == NULL) {
+        printf("Queue is empty\n");
+        return;
+    }
+
+    struct Node* temp = front;
+
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
 int main() {
     int value;
     printf("Enter value: ");
